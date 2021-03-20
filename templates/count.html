@@ -1,0 +1,17 @@
+<h1>COUNT: There are total {{ num_words }} words</h1>
+
+<a href="{% url 'home' %}">Start Again</a>
+
+<h1>Your Text:</h1>
+{{ fulltexting }}
+<br />
+
+{{ total_worddictionary }}
+<br />
+
+{% for a,b in list_worddictionary %}
+
+<br />
+{{a}} - {{b}}
+
+{% endfor %}
